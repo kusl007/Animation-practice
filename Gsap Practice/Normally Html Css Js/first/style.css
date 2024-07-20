@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    /* margin:10vw 0 0 10vw; */
+    background: #d86c6c;
+    height: 20vh;
+    width: 10vw;
+
+}
