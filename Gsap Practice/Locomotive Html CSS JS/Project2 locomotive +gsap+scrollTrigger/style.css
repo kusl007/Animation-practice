@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background: antiquewhite;
+   
+}
+.page2{
+    min-height: 100vh;
+    width: 100vw;
+    background: #556043;
+    padding: 5vw;
+
+ 
+}
+.page3{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(112, 110, 163);
+
+}
+.page2 h1{
+    color: #434b34;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 400;
+}
+
