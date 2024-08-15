@@ -78,7 +78,7 @@ function gsapAnim(){
         scrollTrigger:{
              trigger:".page2 h1 span",
              scroller:".main",
-             markers:true,
+            //  markers:true,
              start:"top 30%",
              end:"top -10%",
              scrub:3
