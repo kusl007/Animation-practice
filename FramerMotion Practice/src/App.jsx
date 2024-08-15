@@ -6,20 +6,23 @@ import KeyFrames from "./components/KeyFrames/index.jsx"
 import Drag from "./components/Drag/index.jsx"
 import Hover from "./components/Hover/index.jsx"
 import Stagger from "./components/Sequencing_&_Staggering/index.jsx"
+import ScrollAnimation from "./components/ScrollAnimations/index.jsx"
 
 
 export default function App() {
+  
 
   return (
 
-   <div className="bg-[#000000a5] min-h-screen">
-    <nav className="w-screen h-16 bg-gray-300 flex justify-center items-center gap-10">
+   <div className="bg-[#000000a5] min-h-screen overflow-x-hidden">
+    <nav className="max-w-screen h-16 bg-gray-300 flex justify-evenly items-center gap-10 overflow-x-auto">
       <Link to="/project1">Project1</Link>
       <Link to="/variants">Variants</Link>
       <Link to="/keyFrames">KeyFrames</Link>
       <Link to="/drag">Drag</Link>
       <Link to="/hover">Hover</Link>
       <Link to="/stagger">Stagger</Link>
+      <Link to="/scrollAnimation">ScrollAnimation</Link>
        
     </nav>
     <Routes>
@@ -30,6 +33,7 @@ export default function App() {
       <Route path="/drag" element={<Drag/>}/>
       <Route path="/hover" element={<Hover/>}/>
       <Route path="/stagger" element={<Stagger/>}/>
+      <Route path="/scrollAnimation" element={<ScrollAnimation/>}/>
     </Routes>
     </div>
   )
