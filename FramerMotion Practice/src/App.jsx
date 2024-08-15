@@ -7,6 +7,7 @@ import Drag from "./components/Drag/index.jsx"
 import Hover from "./components/Hover/index.jsx"
 import Stagger from "./components/Sequencing_&_Staggering/index.jsx"
 import ScrollAnimation from "./components/ScrollAnimations/index.jsx"
+import AnimatingLayout from "./components/AnimatingLayout/index.jsx"
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Link to="/hover">Hover</Link>
       <Link to="/stagger">Stagger</Link>
       <Link to="/scrollAnimation">ScrollAnimation</Link>
+      <Link to="/animatingLayout">AnimatingLayout</Link>
        
     </nav>
     <Routes>
@@ -34,6 +36,7 @@ export default function App() {
       <Route path="/hover" element={<Hover/>}/>
       <Route path="/stagger" element={<Stagger/>}/>
       <Route path="/scrollAnimation" element={<ScrollAnimation/>}/>
+      <Route path="/animatingLayout" element={<AnimatingLayout/>}/>
     </Routes>
     </div>
   )
