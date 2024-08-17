@@ -26,7 +26,7 @@ const index = () => {
         //     delay:.5,
         //     duration:2,
         // })
-    } ,{scope:".container-1"})
+    } ,{scope:".container-1"} )
 
   return (
     <div className='h-screen w-screen flex justify-center items-center gap-5 '>
