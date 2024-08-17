@@ -5,6 +5,8 @@ import jack from "../../assets/jack.png";
 import cockroaches from "../../assets/cockroaches.png";
 
 const index = () => {
+    const {contextSafe}=useGSAP()
+
   const jackRef = useRef(null);
   const cockroachRef = useRef(null);
 
@@ -15,12 +17,12 @@ const index = () => {
   const [yMove, setYMove] = useState(0);
 
  
-  const moveJack = (e) => {
+  const moveJack = contextSafe((e) => {
     gsap.to(jackRef.current, {
       x: e.clientX-1400,
       y: e.clientY-700,
     });
-  };
+  })
 
   useGSAP(() => {
     gsap.to(
